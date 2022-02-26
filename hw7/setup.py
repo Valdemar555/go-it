@@ -4,7 +4,7 @@ setup(
     name="clean-folder",
     version="0.0.1",
     entry_points={
-        "console_scripts": ["clean-folder=clean_folder.clean:my_func"],
+        "console_scripts": ["clean-folder=clean_folder.clean:main"],
     },
     packages=find_packages(),
 )
