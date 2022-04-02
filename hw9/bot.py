@@ -32,7 +32,7 @@ def parser(user_input:str):
         command = show_func
         data = []
         return command, data   
-    elif user_input.lower().startswith("close"):
+    elif user_input.lower().startswith("close") or user_input.lower().startswith("exit") or user_input.lower().startswith("bye"):
         command = close_func
         data = "exit"
         return command, data
