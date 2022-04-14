@@ -58,8 +58,8 @@ def get_birthdays_per_week (users:list):
                 birthday_week['Friday'].append(users[i]['name'])
             else:
                 birthday_week['Monday'].append(users[i]['name'])
-        print(birthday_week)
-        
+    print([f"{day} : {bd}" for day, bd in birthday_week.items() if bd])
+
             
                    
 if __name__ == '__main__':       
