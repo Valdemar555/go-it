@@ -360,6 +360,7 @@ def find_contact(arg):
     return True
 
 adress_book = AddressBook()
+adress_book.save_data()
 adress_book.load_data()
 
    
