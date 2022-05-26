@@ -1,430 +1,794 @@
-<mxfile host="65bd71144e">
-    <diagram id="78i37nFeTOpsBL-58T68" name="Page-1">
-        <mxGraphModel dx="637" dy="550" grid="1" gridSize="10" guides="0" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
-            <root>
-                <mxCell id="0"/>
-                <mxCell id="1" parent="0"/>
-                <mxCell id="2" value="Main" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
-                    <mxGeometry x="800" y="40" width="140" height="112" as="geometry"/>
-                </mxCell>
-                <mxCell id="3" value=" Address Book" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="2">
-                    <mxGeometry y="26" width="140" height="34" as="geometry"/>
-                </mxCell>
-                <mxCell id="4" value="Notebook" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="2">
-                    <mxGeometry y="60" width="140" height="26" as="geometry"/>
-                </mxCell>
-                <mxCell id="5" value="Sorting" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="2">
-                    <mxGeometry y="86" width="140" height="26" as="geometry"/>
-                </mxCell>
-                <mxCell id="6" value="AddressBook(UserDict)" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
-                    <mxGeometry x="270" y="120" width="140" height="390" as="geometry"/>
-                </mxCell>
-                <mxCell id="7" value="+ def save_data" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="6">
-                    <mxGeometry y="26" width="140" height="26" as="geometry"/>
-                </mxCell>
-                <mxCell id="9" value="+ def load_data" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="6">
-                    <mxGeometry y="52" width="140" height="26" as="geometry"/>
-                </mxCell>
-                <mxCell id="8" value="+ def add_record" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="6">
-                    <mxGeometry y="78" width="140" height="26" as="geometry"/>
-                </mxCell>
-                <mxCell id="17" value="+ def delete_record" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="6">
-                    <mxGeometry y="104" width="140" height="26" as="geometry"/>
-                </mxCell>
-                <mxCell id="18" value="- def __iter__" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="6">
-                    <mxGeometry y="130" width="140" height="26" as="geometry"/>
-                </mxCell>
-                <mxCell id="19" value="+ def iterator_2" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="6">
-                    <mxGeometry y="156" width="140" height="26" as="geometry"/>
-                </mxCell>
-                <mxCell id="21" value="+ def iterator" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="6">
-                    <mxGeometry y="182" width="140" height="26" as="geometry"/>
-                </mxCell>
-                <mxCell id="24" value="- def __next__" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="6">
-                    <mxGeometry y="208" width="140" height="26" as="geometry"/>
-                </mxCell>
-                <mxCell id="25" value="- def __getstate__" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="6">
-                    <mxGeometry y="234" width="140" height="26" as="geometry"/>
-                </mxCell>
-                <mxCell id="27" value="- def __setstate__" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="6">
-                    <mxGeometry y="260" width="140" height="26" as="geometry"/>
-                </mxCell>
-                <mxCell id="35" value="+ def show_contacts" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="6">
-                    <mxGeometry y="286" width="140" height="26" as="geometry"/>
-                </mxCell>
-                <mxCell id="34" value="+ def add_contact" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="6">
-                    <mxGeometry y="312" width="140" height="26" as="geometry"/>
-                </mxCell>
-                <mxCell id="33" value="+ def del_contact" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="6">
-                    <mxGeometry y="338" width="140" height="26" as="geometry"/>
-                </mxCell>
-                <mxCell id="39" value="+ def find_contact" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="6">
-                    <mxGeometry y="364" width="140" height="26" as="geometry"/>
-                </mxCell>
-                <mxCell id="40" value="NoteBook(UserDict)" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
-                    <mxGeometry x="800" y="210" width="140" height="182" as="geometry"/>
-                </mxCell>
-                <mxCell id="41" value="+ def save_data" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="40">
-                    <mxGeometry y="26" width="140" height="26" as="geometry"/>
-                </mxCell>
-                <mxCell id="42" value="+ def load_data" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="40">
-                    <mxGeometry y="52" width="140" height="26" as="geometry"/>
-                </mxCell>
-                <mxCell id="43" value="+ def add_record" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="40">
-                    <mxGeometry y="78" width="140" height="26" as="geometry"/>
-                </mxCell>
-                <mxCell id="44" value="+ def edit_note" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="40">
-                    <mxGeometry y="104" width="140" height="26" as="geometry"/>
-                </mxCell>
-                <mxCell id="45" value="+ def delete_whole_record" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="40">
-                    <mxGeometry y="130" width="140" height="26" as="geometry"/>
-                </mxCell>
-                <mxCell id="46" value="- def __str__" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="40">
-                    <mxGeometry y="156" width="140" height="26" as="geometry"/>
-                </mxCell>
-                <mxCell id="56" value="Sorting" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
-                    <mxGeometry x="1160" y="120" width="180" height="390" as="geometry"/>
-                </mxCell>
-                <mxCell id="57" value="+ def archive_extr" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="56">
-                    <mxGeometry y="26" width="180" height="26" as="geometry"/>
-                </mxCell>
-                <mxCell id="58" value="+ def delete_empty_folders" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="56">
-                    <mxGeometry y="52" width="180" height="26" as="geometry"/>
-                </mxCell>
-                <mxCell id="59" value="+ def get_files_tree_from" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="56">
-                    <mxGeometry y="78" width="180" height="26" as="geometry"/>
-                </mxCell>
-                <mxCell id="60" value="+ def move_file_to_folder" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="56">
-                    <mxGeometry y="104" width="180" height="26" as="geometry"/>
-                </mxCell>
-                <mxCell id="61" value="+ def tranliteration" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="56">
-                    <mxGeometry y="130" width="180" height="26" as="geometry"/>
-                </mxCell>
-                <mxCell id="62" value="+ def normalize" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="56">
-                    <mxGeometry y="156" width="180" height="26" as="geometry"/>
-                </mxCell>
-                <mxCell id="63" value="+ def renaming" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="56">
-                    <mxGeometry y="182" width="180" height="26" as="geometry"/>
-                </mxCell>
-                <mxCell id="64" value="def sorting_files_to_folders" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="56">
-                    <mxGeometry y="208" width="180" height="26" as="geometry"/>
-                </mxCell>
-                <mxCell id="65" value="+ def cleaning" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="56">
-                    <mxGeometry y="234" width="180" height="26" as="geometry"/>
-                </mxCell>
-                <mxCell id="66" value="- def __setstate__" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="56">
-                    <mxGeometry y="260" width="180" height="26" as="geometry"/>
-                </mxCell>
-                <mxCell id="67" value="+ def show_contacts" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="56">
-                    <mxGeometry y="286" width="180" height="26" as="geometry"/>
-                </mxCell>
-                <mxCell id="68" value="+ def add_contact" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="56">
-                    <mxGeometry y="312" width="180" height="26" as="geometry"/>
-                </mxCell>
-                <mxCell id="69" value="+ def del_contact" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="56">
-                    <mxGeometry y="338" width="180" height="26" as="geometry"/>
-                </mxCell>
-                <mxCell id="70" value="+ def find_contact" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="56">
-                    <mxGeometry y="364" width="180" height="26" as="geometry"/>
-                </mxCell>
-                <mxCell id="71" value="Record" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
-                    <mxGeometry x="30" y="540" width="190" height="634" as="geometry"/>
-                </mxCell>
-                <mxCell id="72" value="Name" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="71">
-                    <mxGeometry y="26" width="190" height="26" as="geometry"/>
-                </mxCell>
-                <mxCell id="73" value="Phone" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="71">
-                    <mxGeometry y="52" width="190" height="26" as="geometry"/>
-                </mxCell>
-                <mxCell id="238" value="Phone" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="71">
-                    <mxGeometry y="78" width="190" height="26" as="geometry"/>
-                </mxCell>
-                <mxCell id="74" value="Adress" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="71">
-                    <mxGeometry y="104" width="190" height="26" as="geometry"/>
-                </mxCell>
-                <mxCell id="75" value="Email" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="71">
-                    <mxGeometry y="130" width="190" height="26" as="geometry"/>
-                </mxCell>
-                <mxCell id="76" value="Birthday" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="71">
-                    <mxGeometry y="156" width="190" height="26" as="geometry"/>
-                </mxCell>
-                <mxCell id="115" value="" style="line;strokeWidth=4;html=1;perimeter=backbonePerimeter;points=[];outlineConnect=0;" vertex="1" parent="71">
-                    <mxGeometry y="182" width="190" height="10" as="geometry"/>
-                </mxCell>
-                <mxCell id="77" value="- def __init__" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="71">
-                    <mxGeometry y="192" width="190" height="26" as="geometry"/>
-                </mxCell>
-                <mxCell id="78" value="+ def add_phone" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="71">
-                    <mxGeometry y="218" width="190" height="26" as="geometry"/>
-                </mxCell>
-                <mxCell id="79" value="+ def delete_phone" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="71">
-                    <mxGeometry y="244" width="190" height="26" as="geometry"/>
-                </mxCell>
-                <mxCell id="86" value="+ def _find_phone_single_value" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="71">
-                    <mxGeometry y="270" width="190" height="26" as="geometry"/>
-                </mxCell>
-                <mxCell id="103" value="+ def change_phone" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="71">
-                    <mxGeometry y="296" width="190" height="26" as="geometry"/>
-                </mxCell>
-                <mxCell id="80" value="- def __iter__" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="71">
-                    <mxGeometry y="322" width="190" height="26" as="geometry"/>
-                </mxCell>
-                <mxCell id="112" value="- def __next__" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="71">
-                    <mxGeometry y="348" width="190" height="26" as="geometry"/>
-                </mxCell>
-                <mxCell id="106" value="- def __repr__" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="71">
-                    <mxGeometry y="374" width="190" height="26" as="geometry"/>
-                </mxCell>
-                <mxCell id="108" value="- def __str__" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="71">
-                    <mxGeometry y="400" width="190" height="26" as="geometry"/>
-                </mxCell>
-                <mxCell id="104" value="- def __gt__" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="71">
-                    <mxGeometry y="426" width="190" height="26" as="geometry"/>
-                </mxCell>
-                <mxCell id="110" value="+ def days_to_birthday" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="71">
-                    <mxGeometry y="452" width="190" height="26" as="geometry"/>
-                </mxCell>
-                <mxCell id="105" value="+ def get_phones" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="71">
-                    <mxGeometry y="478" width="190" height="26" as="geometry"/>
-                </mxCell>
-                <mxCell id="107" value="+ def add_birthday" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="71">
-                    <mxGeometry y="504" width="190" height="26" as="geometry"/>
-                </mxCell>
-                <mxCell id="111" value="+ def add_email" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="71">
-                    <mxGeometry y="530" width="190" height="26" as="geometry"/>
-                </mxCell>
-                <mxCell id="81" value="def add_address" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="71">
-                    <mxGeometry y="556" width="190" height="26" as="geometry"/>
-                </mxCell>
-                <mxCell id="82" value="+ def days_to_birthday" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="71">
-                    <mxGeometry y="582" width="190" height="26" as="geometry"/>
-                </mxCell>
-                <mxCell id="113" value="- def __next__" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="71">
-                    <mxGeometry y="608" width="190" height="26" as="geometry"/>
-                </mxCell>
-                <mxCell id="229" style="edgeStyle=none;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="116" target="128">
-                    <mxGeometry relative="1" as="geometry">
-                        <mxPoint x="650" y="626" as="targetPoint"/>
-                        <Array as="points">
-                            <mxPoint x="660" y="630"/>
-                        </Array>
-                    </mxGeometry>
-                </mxCell>
-                <mxCell id="116" value="Name(Field)" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
-                    <mxGeometry x="360" y="600" width="140" height="52" as="geometry"/>
-                </mxCell>
-                <mxCell id="117" value="- def __init__" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="116">
-                    <mxGeometry y="26" width="140" height="26" as="geometry"/>
-                </mxCell>
-                <mxCell id="230" style="edgeStyle=none;html=1;entryX=0.25;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="120" target="128">
-                    <mxGeometry relative="1" as="geometry">
-                        <mxPoint x="620" y="716" as="targetPoint"/>
-                        <Array as="points">
-                            <mxPoint x="625" y="716"/>
-                        </Array>
-                    </mxGeometry>
-                </mxCell>
-                <mxCell id="120" value="Phone(Field)" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
-                    <mxGeometry x="360" y="690" width="140" height="52" as="geometry"/>
-                </mxCell>
-                <mxCell id="121" value="- def __init__" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="120">
-                    <mxGeometry y="26" width="140" height="26" as="geometry"/>
-                </mxCell>
-                <mxCell id="233" style="edgeStyle=none;html=1;entryX=-0.017;entryY=0.127;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="122" target="129">
-                    <mxGeometry relative="1" as="geometry"/>
-                </mxCell>
-                <mxCell id="122" value="Adress(Field)" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
-                    <mxGeometry x="360" y="766" width="140" height="52" as="geometry"/>
-                </mxCell>
-                <mxCell id="123" value="- def __init__" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="122">
-                    <mxGeometry y="26" width="140" height="26" as="geometry"/>
-                </mxCell>
-                <mxCell id="124" value="Birthday(Field)" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
-                    <mxGeometry x="360" y="860" width="140" height="52" as="geometry"/>
-                </mxCell>
-                <mxCell id="125" value="- def __init__" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="124">
-                    <mxGeometry y="26" width="140" height="26" as="geometry"/>
-                </mxCell>
-                <mxCell id="126" value="Email(Field)" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
-                    <mxGeometry x="360" y="950" width="140" height="52" as="geometry"/>
-                </mxCell>
-                <mxCell id="127" value="- def __init__" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="126">
-                    <mxGeometry y="26" width="140" height="26" as="geometry"/>
-                </mxCell>
-                <mxCell id="128" value="Field" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
-                    <mxGeometry x="590" y="760" width="140" height="78" as="geometry"/>
-                </mxCell>
-                <mxCell id="129" value="- def __init__" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="128">
-                    <mxGeometry y="26" width="140" height="26" as="geometry"/>
-                </mxCell>
-                <mxCell id="130" value="+ def value" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="128">
-                    <mxGeometry y="52" width="140" height="26" as="geometry"/>
-                </mxCell>
-                <mxCell id="132" value="RecordNote" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
-                    <mxGeometry x="770" y="630" width="190" height="192" as="geometry"/>
-                </mxCell>
-                <mxCell id="133" value="Topic" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="132">
-                    <mxGeometry y="26" width="190" height="26" as="geometry"/>
-                </mxCell>
-                <mxCell id="134" value="Note" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="132">
-                    <mxGeometry y="52" width="190" height="26" as="geometry"/>
-                </mxCell>
-                <mxCell id="138" value="" style="line;strokeWidth=4;html=1;perimeter=backbonePerimeter;points=[];outlineConnect=0;" vertex="1" parent="132">
-                    <mxGeometry y="78" width="190" height="10" as="geometry"/>
-                </mxCell>
-                <mxCell id="139" value="- def __init__" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="132">
-                    <mxGeometry y="88" width="190" height="26" as="geometry"/>
-                </mxCell>
-                <mxCell id="140" value="def __repr__" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="132">
-                    <mxGeometry y="114" width="190" height="26" as="geometry"/>
-                </mxCell>
-                <mxCell id="141" value="+ def add_note" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="132">
-                    <mxGeometry y="140" width="190" height="26" as="geometry"/>
-                </mxCell>
-                <mxCell id="142" value="- def __str__" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="132">
-                    <mxGeometry y="166" width="190" height="26" as="geometry"/>
-                </mxCell>
-                <mxCell id="156" value="Topic" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
-                    <mxGeometry x="1030" y="620" width="140" height="104" as="geometry"/>
-                </mxCell>
-                <mxCell id="157" value="- def __init__" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="156">
-                    <mxGeometry y="26" width="140" height="26" as="geometry"/>
-                </mxCell>
-                <mxCell id="158" value="- def __str__" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="156">
-                    <mxGeometry y="52" width="140" height="26" as="geometry"/>
-                </mxCell>
-                <mxCell id="159" value="- def __repr__" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="156">
-                    <mxGeometry y="78" width="140" height="26" as="geometry"/>
-                </mxCell>
-                <mxCell id="164" value="Note" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
-                    <mxGeometry x="1030" y="780" width="140" height="104" as="geometry"/>
-                </mxCell>
-                <mxCell id="165" value="- def __init__" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="164">
-                    <mxGeometry y="26" width="140" height="26" as="geometry"/>
-                </mxCell>
-                <mxCell id="166" value="- def __str__" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="164">
-                    <mxGeometry y="52" width="140" height="26" as="geometry"/>
-                </mxCell>
-                <mxCell id="167" value="- def __repr__" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="164">
-                    <mxGeometry y="78" width="140" height="26" as="geometry"/>
-                </mxCell>
-                <mxCell id="168" value="" style="endArrow=classic;html=1;entryX=0;entryY=0.051;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="56">
-                    <mxGeometry width="50" height="50" relative="1" as="geometry">
-                        <mxPoint x="940" y="100" as="sourcePoint"/>
-                        <mxPoint x="990" y="50" as="targetPoint"/>
-                    </mxGeometry>
-                </mxCell>
-                <mxCell id="171" value="" style="endArrow=classic;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" target="40">
-                    <mxGeometry width="50" height="50" relative="1" as="geometry">
-                        <mxPoint x="870" y="150" as="sourcePoint"/>
-                        <mxPoint x="970" y="20" as="targetPoint"/>
-                    </mxGeometry>
-                </mxCell>
-                <mxCell id="172" value="" style="endArrow=classic;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1.024;entryY=0.799;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="3" target="17">
-                    <mxGeometry width="50" height="50" relative="1" as="geometry">
-                        <mxPoint x="570" y="140" as="sourcePoint"/>
-                        <mxPoint x="510" y="250" as="targetPoint"/>
-                        <Array as="points">
-                            <mxPoint x="520" y="80"/>
-                            <mxPoint x="520" y="245"/>
-                        </Array>
-                    </mxGeometry>
-                </mxCell>
-                <mxCell id="173" value="" style="endArrow=classic;html=1;exitX=-0.018;exitY=-0.129;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="7">
-                    <mxGeometry width="50" height="50" relative="1" as="geometry">
-                        <mxPoint x="170" y="230" as="sourcePoint"/>
-                        <mxPoint x="160" y="540" as="targetPoint"/>
-                    </mxGeometry>
-                </mxCell>
-                <mxCell id="174" value="" style="endArrow=classic;html=1;" edge="1" parent="1">
-                    <mxGeometry width="50" height="50" relative="1" as="geometry">
-                        <mxPoint x="869.5" y="400" as="sourcePoint"/>
-                        <mxPoint x="870" y="630" as="targetPoint"/>
-                    </mxGeometry>
-                </mxCell>
-                <mxCell id="176" value="" style="html=1;whiteSpace=wrap;aspect=fixed;shape=isoRectangle;" vertex="1" parent="1">
-                    <mxGeometry x="220" y="714" width="16.67" height="10" as="geometry"/>
-                </mxCell>
-                <mxCell id="177" value="" style="html=1;whiteSpace=wrap;aspect=fixed;shape=isoRectangle;" vertex="1" parent="1">
-                    <mxGeometry x="220" y="794" width="16.67" height="10" as="geometry"/>
-                </mxCell>
-                <mxCell id="178" value="" style="html=1;whiteSpace=wrap;aspect=fixed;shape=isoRectangle;" vertex="1" parent="1">
-                    <mxGeometry x="220" y="874" width="16.67" height="10" as="geometry"/>
-                </mxCell>
-                <mxCell id="242" style="edgeStyle=none;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="179" target="126">
-                    <mxGeometry relative="1" as="geometry">
-                        <mxPoint x="350" y="975" as="targetPoint"/>
-                        <Array as="points">
-                            <mxPoint x="330" y="975"/>
-                        </Array>
-                    </mxGeometry>
-                </mxCell>
-                <mxCell id="179" value="" style="html=1;whiteSpace=wrap;aspect=fixed;shape=isoRectangle;" vertex="1" parent="1">
-                    <mxGeometry x="220" y="971" width="15" height="9" as="geometry"/>
-                </mxCell>
-                <mxCell id="237" style="edgeStyle=none;html=1;entryX=-0.016;entryY=-0.008;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="180" target="158">
-                    <mxGeometry relative="1" as="geometry"/>
-                </mxCell>
-                <mxCell id="180" value="" style="html=1;whiteSpace=wrap;aspect=fixed;shape=isoRectangle;" vertex="1" parent="1">
-                    <mxGeometry x="960" y="667" width="16.67" height="10" as="geometry"/>
-                </mxCell>
-                <mxCell id="181" value="" style="html=1;whiteSpace=wrap;aspect=fixed;shape=isoRectangle;" vertex="1" parent="1">
-                    <mxGeometry x="960" y="790" width="16.67" height="10" as="geometry"/>
-                </mxCell>
-                <mxCell id="241" style="edgeStyle=none;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="175" target="117">
-                    <mxGeometry relative="1" as="geometry">
-                        <mxPoint x="350" y="635" as="targetPoint"/>
-                    </mxGeometry>
-                </mxCell>
-                <mxCell id="175" value="" style="html=1;whiteSpace=wrap;aspect=fixed;shape=isoRectangle;" vertex="1" parent="1">
-                    <mxGeometry x="220" y="630" width="16.67" height="10" as="geometry"/>
-                </mxCell>
-                <mxCell id="185" value="" style="endArrow=none;html=1;entryX=0;entryY=0.154;entryDx=0;entryDy=0;entryPerimeter=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="238" target="175">
-                    <mxGeometry width="50" height="50" relative="1" as="geometry">
-                        <mxPoint x="230" y="610" as="sourcePoint"/>
-                        <mxPoint x="360" y="630.0039999999999" as="targetPoint"/>
-                    </mxGeometry>
-                </mxCell>
-                <mxCell id="186" value="" style="endArrow=classic;html=1;startArrow=none;" edge="1" parent="1">
-                    <mxGeometry width="50" height="50" relative="1" as="geometry">
-                        <mxPoint x="236.66999999999996" y="718.0364313978657" as="sourcePoint"/>
-                        <mxPoint x="360" y="718" as="targetPoint"/>
-                    </mxGeometry>
-                </mxCell>
-                <mxCell id="187" value="" style="endArrow=classic;html=1;entryX=-0.014;entryY=-0.016;entryDx=0;entryDy=0;entryPerimeter=0;startArrow=none;" edge="1" parent="1">
-                    <mxGeometry width="50" height="50" relative="1" as="geometry">
-                        <mxPoint x="236.66999999999996" y="800.2264313978658" as="sourcePoint"/>
-                        <mxPoint x="358.03999999999996" y="797.7740000000001" as="targetPoint"/>
-                    </mxGeometry>
-                </mxCell>
-                <mxCell id="188" value="" style="endArrow=classic;html=1;entryX=-0.014;entryY=-0.016;entryDx=0;entryDy=0;entryPerimeter=0;startArrow=none;" edge="1" parent="1">
-                    <mxGeometry width="50" height="50" relative="1" as="geometry">
-                        <mxPoint x="238.62999999999997" y="880.2264313978658" as="sourcePoint"/>
-                        <mxPoint x="359.99999999999994" y="877.7740000000001" as="targetPoint"/>
-                    </mxGeometry>
-                </mxCell>
-                <mxCell id="234" style="edgeStyle=none;html=1;" edge="1" parent="1" source="125">
-                    <mxGeometry relative="1" as="geometry">
-                        <mxPoint x="640" y="840" as="targetPoint"/>
-                        <Array as="points">
-                            <mxPoint x="640" y="899"/>
-                        </Array>
-                    </mxGeometry>
-                </mxCell>
-                <mxCell id="235" style="edgeStyle=none;html=1;entryX=0.828;entryY=1.047;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="127" target="130">
-                    <mxGeometry relative="1" as="geometry">
-                        <Array as="points">
-                            <mxPoint x="706" y="989"/>
-                        </Array>
-                    </mxGeometry>
-                </mxCell>
-                <mxCell id="236" value="" style="endArrow=classic;html=1;exitX=0.977;exitY=0.56;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.15;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="181" target="164">
-                    <mxGeometry width="50" height="50" relative="1" as="geometry">
-                        <mxPoint x="1040" y="840" as="sourcePoint"/>
-                        <mxPoint x="1080" y="770" as="targetPoint"/>
-                    </mxGeometry>
-                </mxCell>
-            </root>
-        </mxGraphModel>
-    </diagram>
-</mxfile>
+<svg host="65bd71144e" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="1313px" height="1098px" viewBox="-0.5 -0.5 1313 1098" content="&lt;mxfile&gt;&lt;diagram id=&quot;78i37nFeTOpsBL-58T68&quot; name=&quot;Page-1&quot;&gt;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&lt;/diagram&gt;&lt;/mxfile&gt;">
+    <defs>
+        <clipPath id="mx-clip-776-31-132-34-0">
+            <rect x="776" y="31" width="132" height="34"/>
+        </clipPath>
+        <clipPath id="mx-clip-776-65-132-26-0">
+            <rect x="776" y="65" width="132" height="26"/>
+        </clipPath>
+        <clipPath id="mx-clip-776-91-132-26-0">
+            <rect x="776" y="91" width="132" height="26"/>
+        </clipPath>
+        <clipPath id="mx-clip-246-111-132-26-0">
+            <rect x="246" y="111" width="132" height="26"/>
+        </clipPath>
+        <clipPath id="mx-clip-246-137-132-26-0">
+            <rect x="246" y="137" width="132" height="26"/>
+        </clipPath>
+        <clipPath id="mx-clip-246-163-132-26-0">
+            <rect x="246" y="163" width="132" height="26"/>
+        </clipPath>
+        <clipPath id="mx-clip-246-189-132-26-0">
+            <rect x="246" y="189" width="132" height="26"/>
+        </clipPath>
+        <clipPath id="mx-clip-246-215-132-26-0">
+            <rect x="246" y="215" width="132" height="26"/>
+        </clipPath>
+        <clipPath id="mx-clip-246-241-132-26-0">
+            <rect x="246" y="241" width="132" height="26"/>
+        </clipPath>
+        <clipPath id="mx-clip-246-267-132-26-0">
+            <rect x="246" y="267" width="132" height="26"/>
+        </clipPath>
+        <clipPath id="mx-clip-246-293-132-26-0">
+            <rect x="246" y="293" width="132" height="26"/>
+        </clipPath>
+        <clipPath id="mx-clip-246-319-132-26-0">
+            <rect x="246" y="319" width="132" height="26"/>
+        </clipPath>
+        <clipPath id="mx-clip-246-345-132-26-0">
+            <rect x="246" y="345" width="132" height="26"/>
+        </clipPath>
+        <clipPath id="mx-clip-246-371-132-26-0">
+            <rect x="246" y="371" width="132" height="26"/>
+        </clipPath>
+        <clipPath id="mx-clip-246-397-132-26-0">
+            <rect x="246" y="397" width="132" height="26"/>
+        </clipPath>
+        <clipPath id="mx-clip-246-423-132-26-0">
+            <rect x="246" y="423" width="132" height="26"/>
+        </clipPath>
+        <clipPath id="mx-clip-246-449-132-26-0">
+            <rect x="246" y="449" width="132" height="26"/>
+        </clipPath>
+        <clipPath id="mx-clip-776-201-132-26-0">
+            <rect x="776" y="201" width="132" height="26"/>
+        </clipPath>
+        <clipPath id="mx-clip-776-227-132-26-0">
+            <rect x="776" y="227" width="132" height="26"/>
+        </clipPath>
+        <clipPath id="mx-clip-776-253-132-26-0">
+            <rect x="776" y="253" width="132" height="26"/>
+        </clipPath>
+        <clipPath id="mx-clip-776-279-132-26-0">
+            <rect x="776" y="279" width="132" height="26"/>
+        </clipPath>
+        <clipPath id="mx-clip-776-305-132-26-0">
+            <rect x="776" y="305" width="132" height="26"/>
+        </clipPath>
+        <clipPath id="mx-clip-776-331-132-26-0">
+            <rect x="776" y="331" width="132" height="26"/>
+        </clipPath>
+        <clipPath id="mx-clip-1136-111-172-26-0">
+            <rect x="1136" y="111" width="172" height="26"/>
+        </clipPath>
+        <clipPath id="mx-clip-1136-137-172-26-0">
+            <rect x="1136" y="137" width="172" height="26"/>
+        </clipPath>
+        <clipPath id="mx-clip-1136-163-172-26-0">
+            <rect x="1136" y="163" width="172" height="26"/>
+        </clipPath>
+        <clipPath id="mx-clip-1136-189-172-26-0">
+            <rect x="1136" y="189" width="172" height="26"/>
+        </clipPath>
+        <clipPath id="mx-clip-1136-215-172-26-0">
+            <rect x="1136" y="215" width="172" height="26"/>
+        </clipPath>
+        <clipPath id="mx-clip-1136-241-172-26-0">
+            <rect x="1136" y="241" width="172" height="26"/>
+        </clipPath>
+        <clipPath id="mx-clip-1136-267-172-26-0">
+            <rect x="1136" y="267" width="172" height="26"/>
+        </clipPath>
+        <clipPath id="mx-clip-1136-293-172-26-0">
+            <rect x="1136" y="293" width="172" height="26"/>
+        </clipPath>
+        <clipPath id="mx-clip-1136-319-172-26-0">
+            <rect x="1136" y="319" width="172" height="26"/>
+        </clipPath>
+        <clipPath id="mx-clip-1136-345-172-26-0">
+            <rect x="1136" y="345" width="172" height="26"/>
+        </clipPath>
+        <clipPath id="mx-clip-1136-371-172-26-0">
+            <rect x="1136" y="371" width="172" height="26"/>
+        </clipPath>
+        <clipPath id="mx-clip-1136-397-172-26-0">
+            <rect x="1136" y="397" width="172" height="26"/>
+        </clipPath>
+        <clipPath id="mx-clip-1136-423-172-26-0">
+            <rect x="1136" y="423" width="172" height="26"/>
+        </clipPath>
+        <clipPath id="mx-clip-1136-449-172-26-0">
+            <rect x="1136" y="449" width="172" height="26"/>
+        </clipPath>
+        <clipPath id="mx-clip-6-491-182-26-0">
+            <rect x="6" y="491" width="182" height="26"/>
+        </clipPath>
+        <clipPath id="mx-clip-6-517-182-26-0">
+            <rect x="6" y="517" width="182" height="26"/>
+        </clipPath>
+        <clipPath id="mx-clip-6-543-182-26-0">
+            <rect x="6" y="543" width="182" height="26"/>
+        </clipPath>
+        <clipPath id="mx-clip-6-569-182-26-0">
+            <rect x="6" y="569" width="182" height="26"/>
+        </clipPath>
+        <clipPath id="mx-clip-6-595-182-26-0">
+            <rect x="6" y="595" width="182" height="26"/>
+        </clipPath>
+        <clipPath id="mx-clip-6-621-182-26-0">
+            <rect x="6" y="621" width="182" height="26"/>
+        </clipPath>
+        <clipPath id="mx-clip-6-657-182-26-0">
+            <rect x="6" y="657" width="182" height="26"/>
+        </clipPath>
+        <clipPath id="mx-clip-6-683-182-26-0">
+            <rect x="6" y="683" width="182" height="26"/>
+        </clipPath>
+        <clipPath id="mx-clip-6-709-182-26-0">
+            <rect x="6" y="709" width="182" height="26"/>
+        </clipPath>
+        <clipPath id="mx-clip-6-735-182-26-0">
+            <rect x="6" y="735" width="182" height="26"/>
+        </clipPath>
+        <clipPath id="mx-clip-6-761-182-26-0">
+            <rect x="6" y="761" width="182" height="26"/>
+        </clipPath>
+        <clipPath id="mx-clip-6-787-182-26-0">
+            <rect x="6" y="787" width="182" height="26"/>
+        </clipPath>
+        <clipPath id="mx-clip-6-813-182-26-0">
+            <rect x="6" y="813" width="182" height="26"/>
+        </clipPath>
+        <clipPath id="mx-clip-6-839-182-26-0">
+            <rect x="6" y="839" width="182" height="26"/>
+        </clipPath>
+        <clipPath id="mx-clip-6-865-182-26-0">
+            <rect x="6" y="865" width="182" height="26"/>
+        </clipPath>
+        <clipPath id="mx-clip-6-891-182-26-0">
+            <rect x="6" y="891" width="182" height="26"/>
+        </clipPath>
+        <clipPath id="mx-clip-6-917-182-26-0">
+            <rect x="6" y="917" width="182" height="26"/>
+        </clipPath>
+        <clipPath id="mx-clip-6-943-182-26-0">
+            <rect x="6" y="943" width="182" height="26"/>
+        </clipPath>
+        <clipPath id="mx-clip-6-969-182-26-0">
+            <rect x="6" y="969" width="182" height="26"/>
+        </clipPath>
+        <clipPath id="mx-clip-6-995-182-26-0">
+            <rect x="6" y="995" width="182" height="26"/>
+        </clipPath>
+        <clipPath id="mx-clip-6-1021-182-26-0">
+            <rect x="6" y="1021" width="182" height="26"/>
+        </clipPath>
+        <clipPath id="mx-clip-6-1047-182-26-0">
+            <rect x="6" y="1047" width="182" height="26"/>
+        </clipPath>
+        <clipPath id="mx-clip-6-1073-182-26-0">
+            <rect x="6" y="1073" width="182" height="26"/>
+        </clipPath>
+        <clipPath id="mx-clip-336-591-132-26-0">
+            <rect x="336" y="591" width="132" height="26"/>
+        </clipPath>
+        <clipPath id="mx-clip-336-681-132-26-0">
+            <rect x="336" y="681" width="132" height="26"/>
+        </clipPath>
+        <clipPath id="mx-clip-336-757-132-26-0">
+            <rect x="336" y="757" width="132" height="26"/>
+        </clipPath>
+        <clipPath id="mx-clip-336-851-132-26-0">
+            <rect x="336" y="851" width="132" height="26"/>
+        </clipPath>
+        <clipPath id="mx-clip-336-941-132-26-0">
+            <rect x="336" y="941" width="132" height="26"/>
+        </clipPath>
+        <clipPath id="mx-clip-566-751-132-26-0">
+            <rect x="566" y="751" width="132" height="26"/>
+        </clipPath>
+        <clipPath id="mx-clip-566-777-132-26-0">
+            <rect x="566" y="777" width="132" height="26"/>
+        </clipPath>
+        <clipPath id="mx-clip-746-621-182-26-0">
+            <rect x="746" y="621" width="182" height="26"/>
+        </clipPath>
+        <clipPath id="mx-clip-746-647-182-26-0">
+            <rect x="746" y="647" width="182" height="26"/>
+        </clipPath>
+        <clipPath id="mx-clip-746-683-182-26-0">
+            <rect x="746" y="683" width="182" height="26"/>
+        </clipPath>
+        <clipPath id="mx-clip-746-709-182-26-0">
+            <rect x="746" y="709" width="182" height="26"/>
+        </clipPath>
+        <clipPath id="mx-clip-746-735-182-26-0">
+            <rect x="746" y="735" width="182" height="26"/>
+        </clipPath>
+        <clipPath id="mx-clip-746-761-182-26-0">
+            <rect x="746" y="761" width="182" height="26"/>
+        </clipPath>
+        <clipPath id="mx-clip-1006-611-132-26-0">
+            <rect x="1006" y="611" width="132" height="26"/>
+        </clipPath>
+        <clipPath id="mx-clip-1006-637-132-26-0">
+            <rect x="1006" y="637" width="132" height="26"/>
+        </clipPath>
+        <clipPath id="mx-clip-1006-663-132-26-0">
+            <rect x="1006" y="663" width="132" height="26"/>
+        </clipPath>
+        <clipPath id="mx-clip-1006-771-132-26-0">
+            <rect x="1006" y="771" width="132" height="26"/>
+        </clipPath>
+        <clipPath id="mx-clip-1006-797-132-26-0">
+            <rect x="1006" y="797" width="132" height="26"/>
+        </clipPath>
+        <clipPath id="mx-clip-1006-823-132-26-0">
+            <rect x="1006" y="823" width="132" height="26"/>
+        </clipPath>
+    </defs>
+    <g>
+        <path d="M 772 26 L 772 0 L 912 0 L 912 26" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="all"/>
+        <path d="M 772 26 L 772 112 L 912 112 L 912 26" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 772 26 L 912 26" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="none"/>
+        <g fill="rgb(0, 0, 0)" font-family="Helvetica" pointer-events="none" text-anchor="middle" font-size="12px">
+            <text x="841.5" y="17.5">
+                Main
+            </text>
+        </g>
+        <g fill="rgb(0, 0, 0)" font-family="Helvetica" pointer-events="none" clip-path="url(#mx-clip-776-31-132-34-0)" font-size="12px">
+            <text x="777.5" y="43.5">
+                Address Book
+            </text>
+        </g>
+        <g fill="rgb(0, 0, 0)" font-family="Helvetica" pointer-events="none" clip-path="url(#mx-clip-776-65-132-26-0)" font-size="12px">
+            <text x="777.5" y="77.5">
+                Notebook
+            </text>
+        </g>
+        <g fill="rgb(0, 0, 0)" font-family="Helvetica" pointer-events="none" clip-path="url(#mx-clip-776-91-132-26-0)" font-size="12px">
+            <text x="777.5" y="103.5">
+                Sorting
+            </text>
+        </g>
+        <path d="M 242 106 L 242 80 L 382 80 L 382 106" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 242 106 L 242 470 L 382 470 L 382 106" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 242 106 L 382 106" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="none"/>
+        <g fill="rgb(0, 0, 0)" font-family="Helvetica" pointer-events="none" text-anchor="middle" font-size="12px">
+            <text x="311.5" y="97.5">
+                AddressBook(UserDict)
+            </text>
+        </g>
+        <g fill="rgb(0, 0, 0)" font-family="Helvetica" pointer-events="none" clip-path="url(#mx-clip-246-111-132-26-0)" font-size="12px">
+            <text x="247.5" y="123.5">
+                + def save_data
+            </text>
+        </g>
+        <g fill="rgb(0, 0, 0)" font-family="Helvetica" pointer-events="none" clip-path="url(#mx-clip-246-137-132-26-0)" font-size="12px">
+            <text x="247.5" y="149.5">
+                + def load_data
+            </text>
+        </g>
+        <g fill="rgb(0, 0, 0)" font-family="Helvetica" pointer-events="none" clip-path="url(#mx-clip-246-163-132-26-0)" font-size="12px">
+            <text x="247.5" y="175.5">
+                + def add_record
+            </text>
+        </g>
+        <g fill="rgb(0, 0, 0)" font-family="Helvetica" pointer-events="none" clip-path="url(#mx-clip-246-189-132-26-0)" font-size="12px">
+            <text x="247.5" y="201.5">
+                + def delete_record
+            </text>
+        </g>
+        <g fill="rgb(0, 0, 0)" font-family="Helvetica" pointer-events="none" clip-path="url(#mx-clip-246-215-132-26-0)" font-size="12px">
+            <text x="247.5" y="227.5">
+                - def __iter__
+            </text>
+        </g>
+        <g fill="rgb(0, 0, 0)" font-family="Helvetica" pointer-events="none" clip-path="url(#mx-clip-246-241-132-26-0)" font-size="12px">
+            <text x="247.5" y="253.5">
+                + def iterator_2
+            </text>
+        </g>
+        <g fill="rgb(0, 0, 0)" font-family="Helvetica" pointer-events="none" clip-path="url(#mx-clip-246-267-132-26-0)" font-size="12px">
+            <text x="247.5" y="279.5">
+                + def iterator
+            </text>
+        </g>
+        <g fill="rgb(0, 0, 0)" font-family="Helvetica" pointer-events="none" clip-path="url(#mx-clip-246-293-132-26-0)" font-size="12px">
+            <text x="247.5" y="305.5">
+                - def __next__
+            </text>
+        </g>
+        <g fill="rgb(0, 0, 0)" font-family="Helvetica" pointer-events="none" clip-path="url(#mx-clip-246-319-132-26-0)" font-size="12px">
+            <text x="247.5" y="331.5">
+                - def __getstate__
+            </text>
+        </g>
+        <g fill="rgb(0, 0, 0)" font-family="Helvetica" pointer-events="none" clip-path="url(#mx-clip-246-345-132-26-0)" font-size="12px">
+            <text x="247.5" y="357.5">
+                - def __setstate__
+            </text>
+        </g>
+        <g fill="rgb(0, 0, 0)" font-family="Helvetica" pointer-events="none" clip-path="url(#mx-clip-246-371-132-26-0)" font-size="12px">
+            <text x="247.5" y="383.5">
+                + def show_contacts
+            </text>
+        </g>
+        <g fill="rgb(0, 0, 0)" font-family="Helvetica" pointer-events="none" clip-path="url(#mx-clip-246-397-132-26-0)" font-size="12px">
+            <text x="247.5" y="409.5">
+                + def add_contact
+            </text>
+        </g>
+        <g fill="rgb(0, 0, 0)" font-family="Helvetica" pointer-events="none" clip-path="url(#mx-clip-246-423-132-26-0)" font-size="12px">
+            <text x="247.5" y="435.5">
+                + def del_contact
+            </text>
+        </g>
+        <g fill="rgb(0, 0, 0)" font-family="Helvetica" pointer-events="none" clip-path="url(#mx-clip-246-449-132-26-0)" font-size="12px">
+            <text x="247.5" y="461.5">
+                + def find_contact
+            </text>
+        </g>
+        <path d="M 772 196 L 772 170 L 912 170 L 912 196" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 772 196 L 772 352 L 912 352 L 912 196" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 772 196 L 912 196" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="none"/>
+        <g fill="rgb(0, 0, 0)" font-family="Helvetica" pointer-events="none" text-anchor="middle" font-size="12px">
+            <text x="841.5" y="187.5">
+                NoteBook(UserDict)
+            </text>
+        </g>
+        <g fill="rgb(0, 0, 0)" font-family="Helvetica" pointer-events="none" clip-path="url(#mx-clip-776-201-132-26-0)" font-size="12px">
+            <text x="777.5" y="213.5">
+                + def save_data
+            </text>
+        </g>
+        <g fill="rgb(0, 0, 0)" font-family="Helvetica" pointer-events="none" clip-path="url(#mx-clip-776-227-132-26-0)" font-size="12px">
+            <text x="777.5" y="239.5">
+                + def load_data
+            </text>
+        </g>
+        <g fill="rgb(0, 0, 0)" font-family="Helvetica" pointer-events="none" clip-path="url(#mx-clip-776-253-132-26-0)" font-size="12px">
+            <text x="777.5" y="265.5">
+                + def add_record
+            </text>
+        </g>
+        <g fill="rgb(0, 0, 0)" font-family="Helvetica" pointer-events="none" clip-path="url(#mx-clip-776-279-132-26-0)" font-size="12px">
+            <text x="777.5" y="291.5">
+                + def edit_note
+            </text>
+        </g>
+        <g fill="rgb(0, 0, 0)" font-family="Helvetica" pointer-events="none" clip-path="url(#mx-clip-776-305-132-26-0)" font-size="12px">
+            <text x="777.5" y="317.5">
+                + def delete_whole_record
+            </text>
+        </g>
+        <g fill="rgb(0, 0, 0)" font-family="Helvetica" pointer-events="none" clip-path="url(#mx-clip-776-331-132-26-0)" font-size="12px">
+            <text x="777.5" y="343.5">
+                - def __str__
+            </text>
+        </g>
+        <path d="M 1132 106 L 1132 80 L 1312 80 L 1312 106" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 1132 106 L 1132 470 L 1312 470 L 1312 106" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 1132 106 L 1312 106" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="none"/>
+        <g fill="rgb(0, 0, 0)" font-family="Helvetica" pointer-events="none" text-anchor="middle" font-size="12px">
+            <text x="1221.5" y="97.5">
+                Sorting
+            </text>
+        </g>
+        <g fill="rgb(0, 0, 0)" font-family="Helvetica" pointer-events="none" clip-path="url(#mx-clip-1136-111-172-26-0)" font-size="12px">
+            <text x="1137.5" y="123.5">
+                + def archive_extr
+            </text>
+        </g>
+        <g fill="rgb(0, 0, 0)" font-family="Helvetica" pointer-events="none" clip-path="url(#mx-clip-1136-137-172-26-0)" font-size="12px">
+            <text x="1137.5" y="149.5">
+                + def delete_empty_folders
+            </text>
+        </g>
+        <g fill="rgb(0, 0, 0)" font-family="Helvetica" pointer-events="none" clip-path="url(#mx-clip-1136-163-172-26-0)" font-size="12px">
+            <text x="1137.5" y="175.5">
+                + def get_files_tree_from
+            </text>
+        </g>
+        <g fill="rgb(0, 0, 0)" font-family="Helvetica" pointer-events="none" clip-path="url(#mx-clip-1136-189-172-26-0)" font-size="12px">
+            <text x="1137.5" y="201.5">
+                + def move_file_to_folder
+            </text>
+        </g>
+        <g fill="rgb(0, 0, 0)" font-family="Helvetica" pointer-events="none" clip-path="url(#mx-clip-1136-215-172-26-0)" font-size="12px">
+            <text x="1137.5" y="227.5">
+                + def tranliteration
+            </text>
+        </g>
+        <g fill="rgb(0, 0, 0)" font-family="Helvetica" pointer-events="none" clip-path="url(#mx-clip-1136-241-172-26-0)" font-size="12px">
+            <text x="1137.5" y="253.5">
+                + def normalize
+            </text>
+        </g>
+        <g fill="rgb(0, 0, 0)" font-family="Helvetica" pointer-events="none" clip-path="url(#mx-clip-1136-267-172-26-0)" font-size="12px">
+            <text x="1137.5" y="279.5">
+                + def renaming
+            </text>
+        </g>
+        <g fill="rgb(0, 0, 0)" font-family="Helvetica" pointer-events="none" clip-path="url(#mx-clip-1136-293-172-26-0)" font-size="12px">
+            <text x="1137.5" y="305.5">
+                def sorting_files_to_folders
+            </text>
+        </g>
+        <g fill="rgb(0, 0, 0)" font-family="Helvetica" pointer-events="none" clip-path="url(#mx-clip-1136-319-172-26-0)" font-size="12px">
+            <text x="1137.5" y="331.5">
+                + def cleaning
+            </text>
+        </g>
+        <g fill="rgb(0, 0, 0)" font-family="Helvetica" pointer-events="none" clip-path="url(#mx-clip-1136-345-172-26-0)" font-size="12px">
+            <text x="1137.5" y="357.5">
+                - def __setstate__
+            </text>
+        </g>
+        <g fill="rgb(0, 0, 0)" font-family="Helvetica" pointer-events="none" clip-path="url(#mx-clip-1136-371-172-26-0)" font-size="12px">
+            <text x="1137.5" y="383.5">
+                + def show_contacts
+            </text>
+        </g>
+        <g fill="rgb(0, 0, 0)" font-family="Helvetica" pointer-events="none" clip-path="url(#mx-clip-1136-397-172-26-0)" font-size="12px">
+            <text x="1137.5" y="409.5">
+                + def add_contact
+            </text>
+        </g>
+        <g fill="rgb(0, 0, 0)" font-family="Helvetica" pointer-events="none" clip-path="url(#mx-clip-1136-423-172-26-0)" font-size="12px">
+            <text x="1137.5" y="435.5">
+                + def del_contact
+            </text>
+        </g>
+        <g fill="rgb(0, 0, 0)" font-family="Helvetica" pointer-events="none" clip-path="url(#mx-clip-1136-449-172-26-0)" font-size="12px">
+            <text x="1137.5" y="461.5">
+                + def find_contact
+            </text>
+        </g>
+        <path d="M 2 486 L 2 460 L 192 460 L 192 486" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 2 486 L 2 1094 L 192 1094 L 192 486" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 2 486 L 192 486" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="none"/>
+        <g fill="rgb(0, 0, 0)" font-family="Helvetica" pointer-events="none" text-anchor="middle" font-size="12px">
+            <text x="96.5" y="477.5">
+                Record
+            </text>
+        </g>
+        <g fill="rgb(0, 0, 0)" font-family="Helvetica" pointer-events="none" clip-path="url(#mx-clip-6-491-182-26-0)" font-size="12px">
+            <text x="7.5" y="503.5">
+                Name
+            </text>
+        </g>
+        <g fill="rgb(0, 0, 0)" font-family="Helvetica" pointer-events="none" clip-path="url(#mx-clip-6-517-182-26-0)" font-size="12px">
+            <text x="7.5" y="529.5">
+                Phone
+            </text>
+        </g>
+        <g fill="rgb(0, 0, 0)" font-family="Helvetica" pointer-events="none" clip-path="url(#mx-clip-6-543-182-26-0)" font-size="12px">
+            <text x="7.5" y="555.5">
+                Phone
+            </text>
+        </g>
+        <g fill="rgb(0, 0, 0)" font-family="Helvetica" pointer-events="none" clip-path="url(#mx-clip-6-569-182-26-0)" font-size="12px">
+            <text x="7.5" y="581.5">
+                Adress
+            </text>
+        </g>
+        <g fill="rgb(0, 0, 0)" font-family="Helvetica" pointer-events="none" clip-path="url(#mx-clip-6-595-182-26-0)" font-size="12px">
+            <text x="7.5" y="607.5">
+                Email
+            </text>
+        </g>
+        <g fill="rgb(0, 0, 0)" font-family="Helvetica" pointer-events="none" clip-path="url(#mx-clip-6-621-182-26-0)" font-size="12px">
+            <text x="7.5" y="633.5">
+                Birthday
+            </text>
+        </g>
+        <path d="M 2 647 L 192 647" fill="none" stroke="rgb(0, 0, 0)" stroke-width="4" stroke-miterlimit="10" pointer-events="none"/>
+        <g fill="rgb(0, 0, 0)" font-family="Helvetica" pointer-events="none" clip-path="url(#mx-clip-6-657-182-26-0)" font-size="12px">
+            <text x="7.5" y="669.5">
+                - def __init__
+            </text>
+        </g>
+        <g fill="rgb(0, 0, 0)" font-family="Helvetica" pointer-events="none" clip-path="url(#mx-clip-6-683-182-26-0)" font-size="12px">
+            <text x="7.5" y="695.5">
+                + def add_phone
+            </text>
+        </g>
+        <g fill="rgb(0, 0, 0)" font-family="Helvetica" pointer-events="none" clip-path="url(#mx-clip-6-709-182-26-0)" font-size="12px">
+            <text x="7.5" y="721.5">
+                + def delete_phone
+            </text>
+        </g>
+        <g fill="rgb(0, 0, 0)" font-family="Helvetica" pointer-events="none" clip-path="url(#mx-clip-6-735-182-26-0)" font-size="12px">
+            <text x="7.5" y="747.5">
+                + def _find_phone_single_value
+            </text>
+        </g>
+        <g fill="rgb(0, 0, 0)" font-family="Helvetica" pointer-events="none" clip-path="url(#mx-clip-6-761-182-26-0)" font-size="12px">
+            <text x="7.5" y="773.5">
+                + def change_phone
+            </text>
+        </g>
+        <g fill="rgb(0, 0, 0)" font-family="Helvetica" pointer-events="none" clip-path="url(#mx-clip-6-787-182-26-0)" font-size="12px">
+            <text x="7.5" y="799.5">
+                - def __iter__
+            </text>
+        </g>
+        <g fill="rgb(0, 0, 0)" font-family="Helvetica" pointer-events="none" clip-path="url(#mx-clip-6-813-182-26-0)" font-size="12px">
+            <text x="7.5" y="825.5">
+                - def __next__
+            </text>
+        </g>
+        <g fill="rgb(0, 0, 0)" font-family="Helvetica" pointer-events="none" clip-path="url(#mx-clip-6-839-182-26-0)" font-size="12px">
+            <text x="7.5" y="851.5">
+                - def __repr__
+            </text>
+        </g>
+        <g fill="rgb(0, 0, 0)" font-family="Helvetica" pointer-events="none" clip-path="url(#mx-clip-6-865-182-26-0)" font-size="12px">
+            <text x="7.5" y="877.5">
+                - def __str__
+            </text>
+        </g>
+        <g fill="rgb(0, 0, 0)" font-family="Helvetica" pointer-events="none" clip-path="url(#mx-clip-6-891-182-26-0)" font-size="12px">
+            <text x="7.5" y="903.5">
+                - def __gt__
+            </text>
+        </g>
+        <g fill="rgb(0, 0, 0)" font-family="Helvetica" pointer-events="none" clip-path="url(#mx-clip-6-917-182-26-0)" font-size="12px">
+            <text x="7.5" y="929.5">
+                + def days_to_birthday
+            </text>
+        </g>
+        <g fill="rgb(0, 0, 0)" font-family="Helvetica" pointer-events="none" clip-path="url(#mx-clip-6-943-182-26-0)" font-size="12px">
+            <text x="7.5" y="955.5">
+                + def get_phones
+            </text>
+        </g>
+        <g fill="rgb(0, 0, 0)" font-family="Helvetica" pointer-events="none" clip-path="url(#mx-clip-6-969-182-26-0)" font-size="12px">
+            <text x="7.5" y="981.5">
+                + def add_birthday
+            </text>
+        </g>
+        <g fill="rgb(0, 0, 0)" font-family="Helvetica" pointer-events="none" clip-path="url(#mx-clip-6-995-182-26-0)" font-size="12px">
+            <text x="7.5" y="1007.5">
+                + def add_email
+            </text>
+        </g>
+        <g fill="rgb(0, 0, 0)" font-family="Helvetica" pointer-events="none" clip-path="url(#mx-clip-6-1021-182-26-0)" font-size="12px">
+            <text x="7.5" y="1033.5">
+                def add_address
+            </text>
+        </g>
+        <g fill="rgb(0, 0, 0)" font-family="Helvetica" pointer-events="none" clip-path="url(#mx-clip-6-1047-182-26-0)" font-size="12px">
+            <text x="7.5" y="1059.5">
+                + def days_to_birthday
+            </text>
+        </g>
+        <g fill="rgb(0, 0, 0)" font-family="Helvetica" pointer-events="none" clip-path="url(#mx-clip-6-1073-182-26-0)" font-size="12px">
+            <text x="7.5" y="1085.5">
+                - def __next__
+            </text>
+        </g>
+        <path d="M 472 587.22 L 622 589.83 Q 632 590 632 600 L 632 713.63" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 632 718.88 L 628.5 711.88 L 632 713.63 L 635.5 711.88 Z" fill="rgb(0, 0, 0)" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 332 586 L 332 560 L 472 560 L 472 586" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 332 586 L 332 612 L 472 612 L 472 586" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 332 586 L 472 586" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="none"/>
+        <g fill="rgb(0, 0, 0)" font-family="Helvetica" pointer-events="none" text-anchor="middle" font-size="12px">
+            <text x="401.5" y="577.5">
+                Name(Field)
+            </text>
+        </g>
+        <g fill="rgb(0, 0, 0)" font-family="Helvetica" pointer-events="none" clip-path="url(#mx-clip-336-591-132-26-0)" font-size="12px">
+            <text x="337.5" y="603.5">
+                - def __init__
+            </text>
+        </g>
+        <path d="M 472 676 L 587 676 Q 597 676 597 686 L 597 713.63" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 597 718.88 L 593.5 711.88 L 597 713.63 L 600.5 711.88 Z" fill="rgb(0, 0, 0)" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 332 676 L 332 650 L 472 650 L 472 676" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 332 676 L 332 702 L 472 702 L 472 676" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 332 676 L 472 676" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="none"/>
+        <g fill="rgb(0, 0, 0)" font-family="Helvetica" pointer-events="none" text-anchor="middle" font-size="12px">
+            <text x="401.5" y="667.5">
+                Phone(Field)
+            </text>
+        </g>
+        <g fill="rgb(0, 0, 0)" font-family="Helvetica" pointer-events="none" clip-path="url(#mx-clip-336-681-132-26-0)" font-size="12px">
+            <text x="337.5" y="693.5">
+                - def __init__
+            </text>
+        </g>
+        <path d="M 472 750.8 L 553.25 749.41" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 558.5 749.32 L 551.56 752.94 L 553.25 749.41 L 551.44 745.94 Z" fill="rgb(0, 0, 0)" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 332 752 L 332 726 L 472 726 L 472 752" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 332 752 L 332 778 L 472 778 L 472 752" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 332 752 L 472 752" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="none"/>
+        <g fill="rgb(0, 0, 0)" font-family="Helvetica" pointer-events="none" text-anchor="middle" font-size="12px">
+            <text x="401.5" y="743.5">
+                Adress(Field)
+            </text>
+        </g>
+        <g fill="rgb(0, 0, 0)" font-family="Helvetica" pointer-events="none" clip-path="url(#mx-clip-336-757-132-26-0)" font-size="12px">
+            <text x="337.5" y="769.5">
+                - def __init__
+            </text>
+        </g>
+        <path d="M 332 846 L 332 820 L 472 820 L 472 846" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 332 846 L 332 872 L 472 872 L 472 846" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 332 846 L 472 846" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="none"/>
+        <g fill="rgb(0, 0, 0)" font-family="Helvetica" pointer-events="none" text-anchor="middle" font-size="12px">
+            <text x="401.5" y="837.5">
+                Birthday(Field)
+            </text>
+        </g>
+        <g fill="rgb(0, 0, 0)" font-family="Helvetica" pointer-events="none" clip-path="url(#mx-clip-336-851-132-26-0)" font-size="12px">
+            <text x="337.5" y="863.5">
+                - def __init__
+            </text>
+        </g>
+        <path d="M 332 936 L 332 910 L 472 910 L 472 936" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 332 936 L 332 962 L 472 962 L 472 936" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 332 936 L 472 936" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="none"/>
+        <g fill="rgb(0, 0, 0)" font-family="Helvetica" pointer-events="none" text-anchor="middle" font-size="12px">
+            <text x="401.5" y="927.5">
+                Email(Field)
+            </text>
+        </g>
+        <g fill="rgb(0, 0, 0)" font-family="Helvetica" pointer-events="none" clip-path="url(#mx-clip-336-941-132-26-0)" font-size="12px">
+            <text x="337.5" y="953.5">
+                - def __init__
+            </text>
+        </g>
+        <path d="M 562 746 L 562 720 L 702 720 L 702 746" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 562 746 L 562 798 L 702 798 L 702 746" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 562 746 L 702 746" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="none"/>
+        <g fill="rgb(0, 0, 0)" font-family="Helvetica" pointer-events="none" text-anchor="middle" font-size="12px">
+            <text x="631.5" y="737.5">
+                Field
+            </text>
+        </g>
+        <g fill="rgb(0, 0, 0)" font-family="Helvetica" pointer-events="none" clip-path="url(#mx-clip-566-751-132-26-0)" font-size="12px">
+            <text x="567.5" y="763.5">
+                - def __init__
+            </text>
+        </g>
+        <g fill="rgb(0, 0, 0)" font-family="Helvetica" pointer-events="none" clip-path="url(#mx-clip-566-777-132-26-0)" font-size="12px">
+            <text x="567.5" y="789.5">
+                + def value
+            </text>
+        </g>
+        <path d="M 742 616 L 742 590 L 932 590 L 932 616" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 742 616 L 742 782 L 932 782 L 932 616" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 742 616 L 932 616" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="none"/>
+        <g fill="rgb(0, 0, 0)" font-family="Helvetica" pointer-events="none" text-anchor="middle" font-size="12px">
+            <text x="836.5" y="607.5">
+                RecordNote
+            </text>
+        </g>
+        <g fill="rgb(0, 0, 0)" font-family="Helvetica" pointer-events="none" clip-path="url(#mx-clip-746-621-182-26-0)" font-size="12px">
+            <text x="747.5" y="633.5">
+                Topic
+            </text>
+        </g>
+        <g fill="rgb(0, 0, 0)" font-family="Helvetica" pointer-events="none" clip-path="url(#mx-clip-746-647-182-26-0)" font-size="12px">
+            <text x="747.5" y="659.5">
+                Note
+            </text>
+        </g>
+        <path d="M 742 673 L 932 673" fill="none" stroke="rgb(0, 0, 0)" stroke-width="4" stroke-miterlimit="10" pointer-events="none"/>
+        <g fill="rgb(0, 0, 0)" font-family="Helvetica" pointer-events="none" clip-path="url(#mx-clip-746-683-182-26-0)" font-size="12px">
+            <text x="747.5" y="695.5">
+                - def __init__
+            </text>
+        </g>
+        <g fill="rgb(0, 0, 0)" font-family="Helvetica" pointer-events="none" clip-path="url(#mx-clip-746-709-182-26-0)" font-size="12px">
+            <text x="747.5" y="721.5">
+                def __repr__
+            </text>
+        </g>
+        <g fill="rgb(0, 0, 0)" font-family="Helvetica" pointer-events="none" clip-path="url(#mx-clip-746-735-182-26-0)" font-size="12px">
+            <text x="747.5" y="747.5">
+                + def add_note
+            </text>
+        </g>
+        <g fill="rgb(0, 0, 0)" font-family="Helvetica" pointer-events="none" clip-path="url(#mx-clip-746-761-182-26-0)" font-size="12px">
+            <text x="747.5" y="773.5">
+                - def __str__
+            </text>
+        </g>
+        <path d="M 1002 606 L 1002 580 L 1142 580 L 1142 606" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 1002 606 L 1002 684 L 1142 684 L 1142 606" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 1002 606 L 1142 606" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="none"/>
+        <g fill="rgb(0, 0, 0)" font-family="Helvetica" pointer-events="none" text-anchor="middle" font-size="12px">
+            <text x="1071.5" y="597.5">
+                Topic
+            </text>
+        </g>
+        <g fill="rgb(0, 0, 0)" font-family="Helvetica" pointer-events="none" clip-path="url(#mx-clip-1006-611-132-26-0)" font-size="12px">
+            <text x="1007.5" y="623.5">
+                - def __init__
+            </text>
+        </g>
+        <g fill="rgb(0, 0, 0)" font-family="Helvetica" pointer-events="none" clip-path="url(#mx-clip-1006-637-132-26-0)" font-size="12px">
+            <text x="1007.5" y="649.5">
+                - def __str__
+            </text>
+        </g>
+        <g fill="rgb(0, 0, 0)" font-family="Helvetica" pointer-events="none" clip-path="url(#mx-clip-1006-663-132-26-0)" font-size="12px">
+            <text x="1007.5" y="675.5">
+                - def __repr__
+            </text>
+        </g>
+        <path d="M 1002 766 L 1002 740 L 1142 740 L 1142 766" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 1002 766 L 1002 844 L 1142 844 L 1142 766" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 1002 766 L 1142 766" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="none"/>
+        <g fill="rgb(0, 0, 0)" font-family="Helvetica" pointer-events="none" text-anchor="middle" font-size="12px">
+            <text x="1071.5" y="757.5">
+                Note
+            </text>
+        </g>
+        <g fill="rgb(0, 0, 0)" font-family="Helvetica" pointer-events="none" clip-path="url(#mx-clip-1006-771-132-26-0)" font-size="12px">
+            <text x="1007.5" y="783.5">
+                - def __init__
+            </text>
+        </g>
+        <g fill="rgb(0, 0, 0)" font-family="Helvetica" pointer-events="none" clip-path="url(#mx-clip-1006-797-132-26-0)" font-size="12px">
+            <text x="1007.5" y="809.5">
+                - def __str__
+            </text>
+        </g>
+        <g fill="rgb(0, 0, 0)" font-family="Helvetica" pointer-events="none" clip-path="url(#mx-clip-1006-823-132-26-0)" font-size="12px">
+            <text x="1007.5" y="835.5">
+                - def __repr__
+            </text>
+        </g>
+        <path d="M 912 60 L 1125.73 98.75" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 1130.9 99.69 L 1123.39 101.89 L 1125.73 98.75 L 1124.64 95 Z" fill="rgb(0, 0, 0)" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 842 110 L 842 163.63" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 842 168.88 L 838.5 161.88 L 842 163.63 L 845.5 161.88 Z" fill="rgb(0, 0, 0)" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 772 43 L 502 40.11 Q 492 40 492 50 L 492 195 Q 492 205 482 204.98 L 391.73 204.79" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 386.48 204.78 L 393.49 201.29 L 391.73 204.79 L 393.47 208.29 Z" fill="rgb(0, 0, 0)" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 239.48 102.65 L 146.14 453.85" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 144.79 458.92 L 143.2 451.26 L 146.14 453.85 L 149.97 453.05 Z" fill="rgb(0, 0, 0)" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 841.5 360 L 841.99 583.63" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 842 588.88 L 838.48 581.89 L 841.99 583.63 L 845.48 581.87 Z" fill="rgb(0, 0, 0)" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 192 679 L 200.34 674.19 L 208.67 679 L 200.34 683.81 L 192 679 Z" fill="rgb(255, 255, 255)" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 192 759 L 200.34 754.19 L 208.67 759 L 200.34 763.81 L 192 759 Z" fill="rgb(255, 255, 255)" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 192 839 L 200.34 834.19 L 208.67 839 L 200.34 843.81 L 192 839 Z" fill="rgb(255, 255, 255)" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 207 935.46 L 292 935.05 Q 302 935 311.99 935.33 L 325.64 935.79" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 330.88 935.96 L 323.77 939.23 L 325.64 935.79 L 324 932.23 Z" fill="rgb(0, 0, 0)" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 192 935.5 L 199.5 931.17 L 207 935.5 L 199.5 939.83 L 192 935.5 Z" fill="rgb(255, 255, 255)" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 948.67 631.97 L 993.39 631.81" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 998.64 631.8 L 991.65 635.32 L 993.39 631.81 L 991.63 628.32 Z" fill="rgb(0, 0, 0)" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 932 632 L 940.34 627.19 L 948.67 632 L 940.34 636.81 L 932 632 Z" fill="rgb(255, 255, 255)" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 932 755 L 940.34 750.19 L 948.67 755 L 940.34 759.81 L 932 755 Z" fill="rgb(255, 255, 255)" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 208.67 595.25 L 325.63 598.81" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 330.88 598.97 L 323.78 602.25 L 325.63 598.81 L 323.99 595.26 Z" fill="rgb(0, 0, 0)" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 192 595 L 200.34 590.19 L 208.67 595 L 200.34 599.81 L 192 595 Z" fill="rgb(255, 255, 255)" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 192 551 L 192 591.54" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 208.67 678.04 L 325.63 678" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 330.88 678 L 323.88 681.5 L 325.63 678 L 323.88 674.5 Z" fill="rgb(0, 0, 0)" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 208.67 760.23 L 323.67 757.9" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 328.92 757.8 L 321.99 761.44 L 323.67 757.9 L 321.85 754.44 Z" fill="rgb(0, 0, 0)" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 210.63 840.23 L 325.63 837.9" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 330.88 837.8 L 323.95 841.44 L 325.63 837.9 L 323.81 834.44 Z" fill="rgb(0, 0, 0)" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 472 859 L 602 859 Q 612 859 612 849 L 612 806.37" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 612 801.12 L 615.5 808.12 L 612 806.37 L 608.5 808.12 Z" fill="rgb(0, 0, 0)" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 472 949 L 668 949 Q 678 949 677.99 939 L 677.92 805.59" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 677.92 800.34 L 681.42 807.34 L 677.92 805.59 L 674.42 807.34 Z" fill="rgb(0, 0, 0)" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 948.29 755.6 L 995.63 755.6" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 1000.88 755.6 L 993.88 759.1 L 995.63 755.6 L 993.88 752.1 Z" fill="rgb(0, 0, 0)" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="none"/>
+    </g>
+</svg>
