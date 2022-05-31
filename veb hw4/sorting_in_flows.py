@@ -12,8 +12,8 @@ class SimpleTread(Thread):
         self.call_number = SimpleTread.count
 
     def run(self):
-        print (f"Flow starting id:{self.id}, call number:{self.call_number}\n")
-        print(f"Flow finished id:{self.id}, call number:{self.call_number}\n")
+        print (f"Flow id:{self.id}, process number:{self.call_number} is runing\n")
+        print(f"Flow id:{self.id}, process number:{self.call_number} has been completed\n")
 
                
         
@@ -70,6 +70,7 @@ def get_files_tree_from(direction):  # builds a folder/file tree
                 simple_thread_1 = SimpleTread(1)
                 tree_1, folders_1 = get_files_tree_from(obj)
                 simple_thread_1.start()
+                simple_thread_1.join()
                 tree.update(tree_1)
                 for i in folders_1:
                     folders.append(i)
@@ -77,7 +78,7 @@ def get_files_tree_from(direction):  # builds a folder/file tree
         elif obj.is_file():
             files.append(obj.name)
             tree[direction] = files
-
+    
     return tree, folders  # types: dict, list
 
 
@@ -179,7 +180,8 @@ def sorting_files_to_folders(tree, known_file_extension, main_folder):
             else:
                 ftype = 'unknown'
                 move_file_to_folder(file_location, ftype, main_folder)
-
+    
+    simple_thread_2.join()
     delete_empty_folders(main_folder)       # delete all empty folders
 
     return None
@@ -213,7 +215,7 @@ def cleaning():
             tree, folders_list = (get_files_tree_from(main_path))
             sorting_files_to_folders(tree, known_file_extension, main_path)
             is_sorted = True
-
+            print(f'Folder {main_path} has been sorted!')
             return is_sorted
 
         else:
