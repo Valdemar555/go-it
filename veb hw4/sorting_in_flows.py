@@ -1,7 +1,7 @@
 import shutil
 from pathlib import Path, PurePath
 from threading import Thread
-from queue import Queue
+
 
 class SimpleTread(Thread):
     count = 0
