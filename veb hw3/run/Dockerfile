@@ -1,8 +1,13 @@
 FROM python:latest
 
-WORKDIR C:\Users\Вова\Downloads\run>
+MAINTAINER Vladimir Cherevko "volodumurcherevko555@gmail.com"
 
-COPY . .
+WORKDIR /run
+
+COPY . /run
+
+RUN pip install pipenv
+RUN pipenv install
 
 
-ENTRYPOINT ["python","main.py"]
+ENTRYPOINT ["pipenv", "run","python","main.py"]
