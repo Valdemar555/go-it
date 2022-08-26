@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css" />
+    <title>Home page</title>    
+</head>
+
+<body>
+    <header>
+        <main class="container">
+            <div>
+                <nav>                    
+                    <a href="#anchor_contacts">ContactBook</a>
+                    <a href="#anchor_notes">NoteBook</a>
+                </nav>
+            </div>
+        </main>
+    </header>
+    <main class="container">
+        <div>{{contacts| length}}</div>
+        <div>Contacts</div>
+        <div>{{notes| length}}</div>
+        <div>Notes</div>
+        <a name="anchor_contacts"></a>
+        <section>
+            <div>            
+                <h3>ContactBook</h3>
+                <h2>All your contacts</h2>
+                    <div>
+                        <form method="get">
+                            <input type="search" placeholder="Search" name="find_contact">
+                            <button type="submit">Search</button>
+                            <a href="{{ url_for('index', _anchor='anchor_contacts') }}">Show_all</a>
+                        </form>
+                    </div>
+                {% if contacts| length >0 %}
+                <div>
+                    {% for contact in contacts %}
+                    <div>{{contact.first_name}}</div>
+                    <div>{{contact.last_name}}</div>
+                        <div>
+                            <li>phone: {{contact.first_phone}}</li>
+                            <li>phone: {{contact.second_phone}}</li>
+                            <li>birthday: {{contact.birthday}}</li>
+                            <li>email: {{contact.email}}</li>
+                            <li>address: {{contact.address}}</li>
+                        </div>
+                            <div>
+                                <a href="/edit_contact/{{contact.id}}">change</a>
+                                <a href="{{ url_for('delete_contact', id=contact.id, _anchor='anchor_contacts') }}">delete</a>
+                            </div>            
+                    {% endfor %}
+                </div>
+                {% else %}
+                <h2>NO CONTACTS YET</h2>
+                {% endif %}
+            </div>
+            <a href="/contact/">Add new contact</a>
+        </section>
+
+        <a name="anchor_notes"></a>
+        <section>
+            <div>           
+                <h3>NoteBook</h3>
+                <h2>All your notes</h2>
+                <div>
+                    <form method="get">
+                        <input type="search" placeholder="Search" name="inp">
+                        <button type="submit">Search</button>
+                        <a href="{{ url_for('index', _anchor='anchor_notes') }}">Show_all</a>
+                    </form>
+                </div>            
+                {% if notes| length >0 %}
+                <div>
+                    {% for note in notes %}
+                    <div>{{note.name}}</div>
+                        <div>
+                            <li>Description: {{note.description}}</li>
+                            <li>Tags: {{ note.tags|join(', ')}}</li>
+                            {% if note.done %}
+                            <li>Status: <ins>Complected</ins></li>
+                            {% else %}
+                            <li>Status: <i>Not complected</i><a href="{{ url_for('done', id=note.id, _anchor='anchor_notes') }}">Done</a></li>
+                            {% endif %}
+                                <a href="/edit_note/{{note.id}}">change</a>
+                                <a href="{{ url_for('delete_note', id=note.id, _anchor='anchor_notes') }}">delete</a>              </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+                {% else %}
+                <h2>NO NOTES YET</h2>
+                {% endif %}
+            </div>
+            <a href="/note/">Add new note</a>
+        </section> 
+    </main>
+</body>
+</html>
