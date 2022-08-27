@@ -96,9 +96,8 @@ def contact_edit(id):
         address = request.form.get("address")
         datetime_obj = datetime.fromisoformat(birthday)
         contact = db_session.query(Contact).filter(Contact.id == id).update(first_name=first_name,last_name=last_name, first_phone=first_phone, second_phone=second_phone,birthday=datetime_obj, email=email, address=address)
-        db_session.commit()
-        db_session.query(Contact).filter(Contact.id == id).delete()
-        db_session.commit()
+        
+        db_session.commit()        
         return redirect('/')
     return render_template("edit_contact.html")
 

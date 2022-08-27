@@ -30,9 +30,7 @@
                 <h3>ContactBook</h3>
                 <h2>All your contacts</h2>
                     <div>
-                        <form method="get">
-                            <input type="search" placeholder="Search" name="find_contact">
-                            <button type="submit">Search</button>
+                        <form method="get">                            
                             <a href="{{ url_for('index', _anchor='anchor_contacts') }}">Show_all</a>
                         </form>
                     </div>
@@ -67,9 +65,7 @@
                 <h3>NoteBook</h3>
                 <h2>All your notes</h2>
                 <div>
-                    <form method="get">
-                        <input type="search" placeholder="Search" name="inp">
-                        <button type="submit">Search</button>
+                    <form method="get">                        
                         <a href="{{ url_for('index', _anchor='anchor_notes') }}">Show_all</a>
                     </form>
                 </div>            
