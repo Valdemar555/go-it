@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css" />
+    <title>Football</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">                      
+            <nav>
+                <a href="/">Home page</a>
+            </nav>
+        </div>
+    </header>
+    <section>
+        <div class="container">
+            <div>
+                <h3>Matches</h3>
+            </div>
+            {% if matches| length >0 %}
+            <div>
+                {% for match in matches %}
+                <div>                        
+                    <div>{{match.f_match}}</div>
+                    <div>
+                        <li>Score: {{match.score}}</li>
+                    </div>
+                </div>
+                {% endfor %}
+            {% else %}
+            <h2>NO MATCHES RESULT</h2>
+            </div>
+            {% endif %}
+        </div>
+        </div>
+    </section>
+</body>
+
+</html>
