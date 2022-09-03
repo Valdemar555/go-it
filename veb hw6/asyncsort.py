@@ -65,7 +65,7 @@ async def relocateFile(filesInfo):
     dest = os.path.join(GENERENION, info[0], normalize(info[2])+info[3])
     
     if info[0] == 'archives':
-        await aioshutil.unpack_archive(aioshutil.move(src, dest),os.path.join(GENERENION, info[0]))
+        await aioshutil.unpack_archive(await aioshutil.move(src, dest),os.path.join(GENERENION, info[0]))
         os.remove(dest)
         
     else:
