@@ -1,11 +1,9 @@
-#from genericpath import isdir
 import os, shutil
 from pathlib import Path
 import asyncio, aioshutil
 from aiopath import AsyncPath
 import os
-#from sys import argv, platform
-#import re
+
 
 GENERENION = ''
 
